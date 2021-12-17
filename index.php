@@ -19,7 +19,7 @@ Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
   E forse un po di pace tornerà
   Odio l Estate';
 
-  $badWord = '';
+  $wordToChange = $_GET['wordToChange'];
 
 
 ?>
@@ -50,7 +50,7 @@ Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
   <!-- con str_replace modifico qualcosa con qualcos'altro in una specifica stringa o in una variabile -->  
 
   
-    <p> <?php echo str_replace($badWord, '***', $text); ?> </p>
+    <p> <?php echo str_replace($wordToChange, '***', $text); ?> </p>
     
 
   </div>
